@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-webkit-text-size-adjust"
+        ]
+      }
+    ],
+    "no-inline-styles": "off",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "frame-title": "off"
+      }
+    ]
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not edge <= 117",
+    "not ios_saf <= 17",
+    "not safari <= 17",
+    "not and_ff <= 117",
+    "not firefox <= 117",
+    "not and_chr <= 117",
+    "not chrome <= 117",
+    "not opera <= 102",
+    "not samsung <= 22"
+  ]
+}

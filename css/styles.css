@@ -356,8 +356,8 @@ caption {
 }
 
 th {
-	text-align: inherit;
 	text-align: -webkit-match-parent;
+	text-align: inherit;
 }
 
 thead,
@@ -421,6 +421,7 @@ button,
 [type="reset"],
 [type="submit"] {
 	-webkit-appearance: button;
+	appearance: button;
 }
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -479,6 +480,7 @@ legend + * {
 [type="search"] {
 	outline-offset: -2px;
 	-webkit-appearance: textfield;
+	appearance: textfield;
 }
 
 /* rtl:raw:
@@ -500,6 +502,7 @@ legend + * {
 ::file-selector-button {
 	font: inherit;
 	-webkit-appearance: button;
+	appearance: button;
 }
 
 output {
@@ -11757,5 +11760,25 @@ button {
 
 	button {
 		font-size: 16px;
+	}
+	.map-container {
+		position: relative;
+		overflow: hidden;
+		padding-top: 56.25%; /* 16:9 aspect ratio (change this value as needed) */
+	}
+
+	.map-container iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	/* Add additional styles for smaller screens */
+	@media (max-width: 768px) {
+		.map-container {
+			padding-top: 75%; /* Adjust the aspect ratio for smaller screens */
+		}
 	}
 }
