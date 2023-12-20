@@ -127,7 +127,7 @@ function kirimWhatsApp() {
 
 	// Menggabungkan nilai-nilai ke dalam pesan WhatsApp
 	var submit =
-		"Halo, saya ingin memesan tiket sebagai berikut:" +
+		"Halo kak, saya ingin memesan tiket kolam renang" +
 		"\nNomor Transaksi: " +
 		nomorTransaksi +
 		"\nNama: " +
@@ -145,7 +145,7 @@ function kirimWhatsApp() {
 
 	// Membuat URL WhatsApp dengan pesan yang telah diformat
 	var urlWhatsApp =
-		"https://wa.me/6282298371729?text=" + encodeURIComponent(submit);
+		"https://wa.me/+6287777827808?text=" + encodeURIComponent(submit);
 
 	// Membuka tautan WhatsApp dalam tab baru
 	window.open(urlWhatsApp, "_blank");
